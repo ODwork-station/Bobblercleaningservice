@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bobble Cleaning Services</title>
+
+<style>
+html { scroll-behavior: smooth; }
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4fbff;
+    color: #333;
+}
+
+/* HEADER */
+header {
+    background: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h2 {
+    margin-left: 10px;
+    color: #0077b6;
+}
+
+nav a {
+    margin: 0 12px;
+    text-decoration: none;
+    color: #0077b6;
+    font-weight: bold;
+}
+
+/* HERO */
+.hero {
+    background: url('https://images.unsplash.com/photo-1581578731548-c64695cc6952') center/cover;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 48px;
+    background: rgba(0,0,0,0.55);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* SECTIONS */
+section {
+    padding: 60px 30px;
+}
+
+.section-title {
+    text-align: center;
+    color: #0077b6;
+    margin-bottom: 30px;
+}
+
+/* ABOUT */
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.about img {
+    width: 500px;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* SERVICES */
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+    gap: 20px;
+}
+
+.service {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.service:hover {
+    transform: scale(1.05);
+}
+
+.service img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.service h3 {
+    text-align: center;
+    padding: 10px;
+}
+
+/* CONTACT */
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.contact img {
+    width: 500px;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.location {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* QUOTE */
+.quote {
+    background: #e6f7ff;
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #0077b6;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* FOOTER */
+footer {
+    background: #0077b6;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <!-- LOGO -->
+        <svg width="50" height="50" viewBox="0 0 100 100">
+            <path d="M10 55 L50 15 L90 55" fill="#0077b6"/>
+            <rect x="25" y="55" width="50" height="35" fill="#0077b6"/>
+            <rect x="45" y="70" width="10" height="20" fill="white"/>
+            <circle cx="75" cy="30" r="6" fill="#00b4d8"/>
+        </svg>
+
+        <h2>Bobble Cleaning Services</h2>
+    </div>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+        <a href="#quote">Book Now</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+    <h1>Professional Cleaning You Can Trust</h1>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2 class="section-title">About Us</h2>
+
+    <d<div class="about">
+    <img src="https://images.unsplash.com/photo-1585421514738-01798e348b17">
+
+    <div>
+        <p>
+My name is Ibukun, and I am the proud founder of Bobble Cleaning Service, a house cleaning company dedicated to delivering exceptional services to our clients.
+
+As a woman entrepreneur, I started this business with the vision of creating a company that not only provides sparkling clean homes but also places customer satisfaction at the forefront.
+
+At Bobble Cleaning Service, we understand the importance of a clean and organized home and the positive impact it has on your daily life. That is why we pay close attention to detail and are committed to offering personalized cleaning services tailored to your specific needs.
+
+Our team consists of highly trained and experienced professionals who are passionate about what they do. They are dedicated to making your home look and feel its best. We use eco-friendly products and cleaning methods that are safe for your family and pets while still delivering outstanding results.
+
+As a woman-owned business, we are committed to empowering other women and supporting our local community. We believe in equal opportunities and strive to create a diverse and inclusive workplace that reflects the world we live in.
+
+Thank you for choosing Bobble Cleaning Service. We truly appreciate your trust and look forward to making your home shine.
+        </p>
+    </div>
+</div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+    <h2 class="section-title">Our Services</h2>
+
+    <div class="services">
+
+        <div class="service" onclick="location.href='#quote'">
+            <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952">
+            <h3>Residential Cleaning</h3>
+        </div>
+
+        <div class="service" onclick="location.href='#quote'">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
+            <h3>Commercial Cleaning</h3>
+        </div>
+
+        <div class="service" onclick="location.href='#quote'">
+            <img src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf">
+            <h3>Carpet Cleaning</h3>
+        </div>
+
+        <div class="service" onclick="location.href='#quote'">
+            <img src="https://images.unsplash.com/photo-1560185007-cde436f6a4d0">
+            <h3>Upholstery Cleaning</h3>
+        </div>
+
+        <!-- ✅ FIXED OFFICE CLEANING IMAGE -->
+        <div class="service" onclick="location.href='#quote'">
+            <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=800&q=80">
+            <h3>Office Cleaning</h3>
+        </div>
+
+        <div class="service" onclick="location.href='#quote'">
+            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e">
+            <h3>Construction Cleaning</h3>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2 class="section-title">Contact & Locations</h2>
+
+    <div class="contact">
+        <img src="https://images.unsplash.com/photo-1527515637462-cff94eecc1ac">
+
+        <div>
+            <h3>Locations</h3>
+            <div class="location">📍 Lagos, Nigeria</div>
+            <div class="location">📍 Cape Town, South Africa</div>
+
+            <p>Email: Bbobblecleaningservice@gmail.com</p>
+            <p>Phone: +234 906 027 7696</p>
+        </div>
+    </div>
+</section>
+
+<!-- QUOTE -->
+<section id="quote">
+    <h2 class="section-title">Book a Cleaning Service</h2>
+
+    <div class="quote">
+        <form onsubmit="sendWhatsApp(); return false;">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="What service do you need?"></textarea>
+            <button type="submit">Send Request via WhatsApp</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    © 2026 Bobble Cleaning Services
+</footer>
+
+<!-- WHATSAPP SCRIPT -->
+<script>
+function sendWhatsApp() {
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let message = document.getElementById("message").value;
+
+    let url = "https://wa.me/2349060277696?text="
+    + "Hello Bobble Cleaning Service%0A"
+    + "Name: " + name + "%0A"
+    + "Email: " + email + "%0A"
+    + "Message: " + message;
+
+    window.open(url, "_blank");
+}
+</script>
+
+<!-- FLOATING WHATSAPP BUTTON -->
+<a href="https://wa.me/2349060277696?text=Hello%20I%20want%20to%20book%20a%20cleaning%20service"
+style="
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px 18px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 5px 10px rgba(0,0,0,0.3);
+z-index:1000;">
+💬 WhatsApp
+</a>
+
+</body>
+</html>
